@@ -12,6 +12,7 @@ body {
   display: flex;
   align-items: center;
   height: 64px;
+  background-color: #F1ECE9;
 }
 
 .nav-bar img {
@@ -105,10 +106,10 @@ opacity: 1;
   justify-content: center;
   align-items: center;
   min-width: 60%;
-  background-color: grey;
+  background-color: #495058;
   font-size: 1.4rem;
   padding: 1rem 0;
-  color: white;
+  color: #F1ECE9;
 }
 
 /*Information Main*/
@@ -116,7 +117,7 @@ opacity: 1;
 .information {
   display: flex;
   flex-flow: column wrap;
-  width:
+  background-color: #F1ECE9;
 }
 .practise{
   display: flex;
