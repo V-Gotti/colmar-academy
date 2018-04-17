@@ -12,7 +12,6 @@ body {
   display: flex;
   align-items: center;
   height: 64px;
-  background-color: #D7443F;
 }
 
 .nav-bar img {
@@ -74,7 +73,7 @@ opacity: 1;
   margin-left: 24px;
   margin-top: 32px;
   margin: 32px 24px;
-  width: 100%;
+  width: 99%;
   height: auto;
 }
 
@@ -110,4 +109,47 @@ opacity: 1;
   font-size: 1.4rem;
   padding: 1rem 0;
   color: white;
+}
+
+/*Information Main*/
+
+.information {
+  display: flex;
+  flex-flow: column wrap;
+  width:
+}
+.practise{
+  display: flex;
+}
+.practise img {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-top: 32px;
+  margin: 32px 24px;
+  width: 60%;
+  height: auto;
+}
+
+.text {
+  margin-left: 24px;
+  margin-bottom: 24px;
+  width: 60%;
+}
+
+.text h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.text p {
+  margin-bottom: 32px;
+  font-family: "Abel", sans-serif;
+  font-size: 1.8rem;
+  opacity: 0.8;
+}
+
+.em {
+  font-weight: bold;
 }
