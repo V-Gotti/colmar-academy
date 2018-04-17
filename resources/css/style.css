@@ -12,7 +12,7 @@ body {
   display: flex;
   align-items: center;
   height: 64px;
-  background-color: #AECCA4;
+  background-color: #D7443F;
 }
 
 .nav-bar img {
@@ -59,6 +59,55 @@ opacity: 1;
 
 @media only screen and (max-width: 800px) {
   .nav-bar a {
-    display: none;
+  display: none;
   }
+}
+/*banner*/
+
+.banner {
+  display: flex;
+  background-color: #A6A5A1;
+}
+
+.pic img {
+  display: flex;
+  margin-left: 24px;
+  margin-top: 32px;
+  margin: 32px 24px;
+  width: 100%;
+  height: auto;
+}
+
+.learn {
+  display: flex;
+  font-family: "Ubuntu";
+  flex-direction: column;
+  justify-content: center;
+  width: 26rem;
+  margin: 0 24px;
+  padding: 24px 24px;
+  padding-bottom: 32px;
+}
+
+.learn h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.learn h4 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60%;
+  background-color: grey;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  color: white;
 }
