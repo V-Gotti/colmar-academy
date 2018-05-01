@@ -8,6 +8,8 @@ body {
 }
 
 .container {
+  display: flex;
+  flex-flow: column wrap;
   margin: 32px 24px;
   width: 60%;
   height: auto;
@@ -21,7 +23,29 @@ body {
   height: auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .container2 {
+    width: 100%;
+    margin: 32px 0px;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+
+}
+
 /*navigation Bar*/
+
+.nav .icons {
+  display: none;
+}
+
 .nav-bar {
   display: flex;
   align-items: center;
@@ -58,7 +82,6 @@ opacity: 1;
 }
 
 .nav-bar div {
-  display: flex;
   margin-right: 24px;
 }
 
@@ -71,12 +94,28 @@ opacity: 1;
   opacity: 0.8;
 }
 
-
 @media only screen and (max-width: 800px) {
   .nav-bar a {
   display: none;
   }
+
+  .nav-bar .img9 {
+    display: none;
+  }
+
+  .nav-bar span {
+    display: none;
+  }
+
+  .nav .icons {
+    display: flex;
+  }
+  .icons img {
+    width: 1.8rem;
+    height: auto;
+  }
 }
+
 /*banner*/
 
 .banner {
@@ -87,7 +126,6 @@ opacity: 1;
 .pic img {
   width: 100%;
   height: auto;
-
 }
 
 .learn {
@@ -131,6 +169,33 @@ opacity: 1;
 .btn:active {
   background-color: #333A42;
   font-size: 2.1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+   .banner {
+     flex-direction: column;
+   }
+
+   .learn {
+     width: 100%;
+     margin: 0 16px;
+   }
+}
+
+@media only screen and (max-width: 560px) {
+  .learn h1 {
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+  }
+
+  .learn h4 {
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+  }
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.6rem 0;
+  }
 }
 
 /*Information Main*/
@@ -209,9 +274,61 @@ opacity: 1;
   color: #84A0E5;
 }
 
-.orientation img {
+.orientation .desktop {
   width: 35%;
   height: auto;
+}
+
+.orientation .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .information {
+    flex-direction: column;
+  }
+
+  .text p {
+    margin: 16px 16px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .text .del {
+    display: none;
+  }
+
+  .text p {
+    display: none;
+  }
+  .container .img8  {
+    display: none;
+  }
+  .orientation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+  }
+  .orientation .desktop {
+    display: none;
+  }
+  .orientation .mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .description h2 {
+    font-size: 1.2rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .description a {
+    font-size: 1rem;
+  }
 }
 /*Start Learning*/
 .start {
@@ -223,6 +340,7 @@ opacity: 1;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  padding: 0 72px 0 72px;
 }
 
 .subject {
@@ -252,9 +370,6 @@ opacity: 1;
   height: auto;
   width: auto;
 }
-.subjects-catalogue {
-  padding: 0 72px 0 72px;
-}
 
 .description h2 {
   padding-top: 24px;
@@ -265,6 +380,49 @@ opacity: 1;
   font-family: bold;
   letter-spacing: 0.2px;
   font-family: "Abel";
+}
+
+@media only screen and (max-width: 1070px) {
+  .subjects-catalogue {
+    padding: 0 16px 0 16px;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .subject, p {
+    display: none;
+  }
+
+  .start {
+    margin-top: -64px;
+  }
+
+  .subjects-catalogue {
+    padding-bottom: 24px;
+  }
+
+  .subject img {
+    display: none;
+  }
+
+  .mob {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+
+  .description h2 {
+    font-size: 1.2rem;
+  }
+
+  .subject:active {
+    margin: 0 0;
+  }
+
+  .text h2 {
+    font-size: 1.6rem;
+  }
 }
 
 /*Thesis Exhibit*/
@@ -300,6 +458,23 @@ opacity: 1;
   opacity: 0.7;
 }
 
+@media only screen and (max-width: 1024px) {
+  .text2 {
+    margin: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .text2 {
+    display: none;
+  }
+   .del {
+     display: none;
+   }
+   .practise video {
+     margin-bottom: -64px;
+   }
+}
 /*footer*/
 
 .foot {
@@ -333,4 +508,17 @@ opacity: 1;
   color: black;
   text-decoration: none;
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 560px) {
+  footer .nav {
+    display: none;
+  }
+  .foot span {
+    padding-top: 24px;
+  }
+
+  .foot {
+    padding-bottom: 16px;
+  }
 }
