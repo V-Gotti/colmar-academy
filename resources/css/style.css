@@ -42,7 +42,7 @@ body {
 
 /*navigation Bar*/
 
-.nav .icons {
+ .icons {
   display: none;
 }
 
@@ -53,7 +53,7 @@ body {
   background-color: #F1ECE9;
 }
 
-.nav-bar img {
+.nav-bar .img9 {
   display: flex;
   justify-content: center;
   height: 54px;
@@ -107,12 +107,14 @@ opacity: 1;
     display: none;
   }
 
-  .nav .icons {
+  .icons {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   .icons img {
-    width: 1.8rem;
-    height: auto;
+    width: auto;
+    height: 2rem;
   }
 }
 
@@ -315,7 +317,8 @@ opacity: 1;
   }
   .orientation .mobile {
     display: block;
-    width: 100%;
+    width: 93%;
+    margin-left: 16px;
     height: auto;
   }
   .description h2 {
@@ -395,7 +398,7 @@ opacity: 1;
   }
 
   .start {
-    margin-top: -64px;
+    margin-top: -24px;
   }
 
   .subjects-catalogue {
@@ -410,10 +413,13 @@ opacity: 1;
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
+    width: 100%;
+    margin-right: 16px;
   }
 
   .description h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 24px 0;
   }
 
   .subject:active {
